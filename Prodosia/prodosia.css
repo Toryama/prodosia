@@ -1,3 +1,16 @@
+	input[type=text], input[type=password] {
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+        background-color: #ddd;
+        outline: none;
+    }
 
         .img-circle {
             position: fixed;
@@ -16,50 +29,66 @@
             position: relative;
         }
 	h1 {
+		text-align: center;
+		margin-top: 0px;
 		font-family:Palatino, URW Palladio L, serif;
 		font-size:100px;
 		font-style: italic;
 
 		}
-        a.bouton1 {
-            padding: 10px 30px;
-            position:fixed;
-            top: 5%;
-            right: 1%;
-            background: linear-gradient( #777, #333);
-            color: #222;
-        }
-        a.bouton1:hover {
-            background: white;
-        }
-        a.bouton2 {
-            padding: 10px 30px;
-            position:fixed;
-            top: 12%;
-            right: 1%;
-            background: linear-gradient( #777, #333);
-            color: #222;
-        }
-        a.bouton2:hover {
-            background: white;
-        }
-
 
         button{
             width:120px;
             height:120px;
-            background: #555;
             box-shadow:2px 2px 8px #aaa;
             font:bold 13px Arial;
-            border-radius:50%;
-            color: #222;
+	    border-radius:50%;
             background: linear-gradient( #777, #333);
+	    background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            opacity: 0.9;
         }
         button.btn:hover {
             background: white;
+	    opacity:1;
         }
 
 	#log {
-	    margin: auto;
-	    width:120px;
+		text-align: center;
+		margin-top: 0px;
+		padding: 120px 120px;
+           	width: 120px;
 	}
+
+	
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: #474e5d;
+        padding-top: 50px;
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 50%;
+    }
+
+	.clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+	
+	
